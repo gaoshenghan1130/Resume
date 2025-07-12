@@ -1,0 +1,197 @@
+\documentclass[letterpaper,11pt]{article}
+\usepackage{latexsym}
+\usepackage[empty]{fullpage}
+\usepackage{titlesec}
+\usepackage{marvosym}
+\usepackage{enumitem}
+\usepackage[hidelinks]{hyperref}
+\usepackage{fontawesome}
+\usepackage{fancyhdr}
+\usepackage[english]{babel}
+\usepackage{tabularx}
+
+\pagestyle{fancy}
+\fancyhf{} % clear all header and footer fields
+\renewcommand{\headrulewidth}{0pt}
+\renewcommand{\footrulewidth}{0pt}
+
+% Adjust margins
+\addtolength{\oddsidemargin}{-0.5in}
+\addtolength{\evensidemargin}{-0.5in}
+\addtolength{\textwidth}{1in}
+\addtolength{\topmargin}{-.5in}
+\addtolength{\textheight}{1.0in}
+
+\urlstyle{same}
+
+% Sections
+\titleformat{\section}{
+  \vspace{-4pt}\scshape\raggedright\large
+}{}{0em}{}[\titlerule\vspace{-5pt}]
+
+% Custom commands
+\newcommand{\resumeItem}[1]{\item\small{
+  {#1 \vspace{-2pt}}
+}}
+\newcommand{\resumeSubheading}[4]{
+  \vspace{-1pt}\item
+  \begin{tabular*}{\textwidth}[t]{l@{\extracolsep{\fill}}r}
+    \textbf{#1} & #2 \\
+    \textit{\small#3} & \textit{\small #4} \\
+  \end{tabular*}\vspace{-5pt}
+}
+\newcommand{\resumeSubItem}[1]{\resumeItem{#1}\vspace{-4pt}}
+\renewcommand{\labelitemii}{$\circ$}
+
+\newcommand{\resumeSubHeadingListStart}{\begin{itemize}[leftmargin=0.15in, label={}]}
+\newcommand{\resumeSubHeadingListEnd}{\end{itemize}}
+\newcommand{\resumeItemListStart}{\begin{itemize}}
+\newcommand{\resumeItemListEnd}{\end{itemize}}
+
+\begin{document}
+
+%----------Header-----------------
+\begin{center}
+	{\Huge \scshape Shenghan Gao} \\ \vspace{1pt}
+	Ann Arbor, MI • \href{mailto:shenghan@umich.edu}{shenghan@umich.edu} • +86 15800522128\\
+	\href{https://github.com/gaoshenghan1130}{https://github.com/gaoshenghan1130}
+\end{center}
+
+%-----------Education-----------------
+\section{Education}
+\resumeSubHeadingListStart
+\item
+\textbf{University of Michigan – Shanghai Jiao Tong University Joint Institute} \\
+\makebox[\textwidth][r]{\textit{Ann Arbor, MI / Shanghai, China}} \\
+\textit{Bachelor of Science in Engineering} \\
+\textit{Dual Degree: Mechanical Engineering and Electrical \& Computer Engineering} \hfill \textit{Expected May 2027}
+\resumeSubHeadingListEnd
+
+%-----------Skills-----------------
+\section{Skills}
+\resumeSubHeadingListStart
+\resumeItem{Languages: C++, Python, C\#, CMake, Makefile, Lua, Protobuf, Java, Elm, MATLAB, SQL}
+\resumeItem{Frameworks: Qt, .NET Core, Unity, Messenger}
+\resumeItem{Tools: Git, Visual Studio, NeoVim, Mathematica, SolidWorks}
+\resumeSubHeadingListEnd
+
+%-----------Projects-----------------
+\section{Projects}
+\resumeSubHeadingListStart
+
+
+\resumeSubheading
+{UDP Server for Cross-Language Module Integration}{2024}
+{Team Project – SJTU RoboCup Team}{}
+\resumeItemListStart
+\resumeItem{Developed an independent UDP server in Python to enable external Python modules (e.g., PyTorch) to communicate with a legacy C++/Lua-based system.}
+\resumeItem{Designed and implemented a communication protocol using Protocol Buffers (protobuf), with supporting scripts in C++ and Python; features include one-sided disconnection handling, automatic reconnection, and multi-type data transmission.}
+\resumeItem{Asynchronously handled multiple client connections using Python’s \texttt{asyncio} and Qt’s signals and slots, enabling efficient data exchange between the server and multiple clients.}
+\resumeItem{Wrapped the Qt \texttt{QProcess} class to store static return values, allowing update functions to directly access returned data.}
+\resumeItem{Utilized Python’s \texttt{multiprocessing} to assign independent processes for computation tasks, achieving multicore utilization; implemented file pipes for parameter updates and shared memory for data exchange.}
+\resumeItem{Built a simple UI to monitor the status of active tasks.}
+\resumeItemListEnd
+
+
+\resumeSubheading
+{Unity Game Design and Development}{2024}
+{Personal Project}{}
+\resumeItemListStart
+\resumeItem{Designed and developed a 3D game in Unity, focusing on game mechanics, level design, and user interface implementation.}
+\resumeItem{Implemented game logic and features using C\#, including player controls and scoring systems.}
+\resumeItem{Gained familiarity with Mono/.NET framework for Unity to support cross-platform development.}
+\resumeItemListEnd
+
+% \resumeSubheading
+% {Precise Test Functions for Skills and Controls in SRC Robots}{2024}
+% {Team Project – SJTU RoboCup Team}{}
+% \resumeItemListStart
+% \resumeItem{Rewrote the singleton system to support CRTP (Curiously Recurring Template Pattern) for enhanced type safety and compile-time validation.}
+% \resumeItem{Implemented a scoring system by wrapping the existing debug engine to display structured scoreboards, replacing scattered print statements.}
+% \resumeItem{Developed a suite of motion control test functions (as templates), specifically targeting D* Lite path planning algorithms.}
+% \resumeItemListEnd
+
+
+\resumeSubheading
+{2D Interactive Game Development with Elm}{2024}
+{Team Project – SJTU}{}
+\resumeItemListStart
+\resumeItem{Implemented a custom physics engine for the game, including collision detection, gravity, friction, momentum, and energy conservation.}
+\resumeItem{Optimized the original \textit{Messenger} structure, improving collision detection performance for brick-like objects by a factor of $10^{3}$.}
+\resumeItem{Managed complex UI interactions and game state using Elm’s The Elm Architecture (TEA), ensuring smooth gameplay and responsiveness.}
+\resumeItem{Enhanced browser performance to achieve low latency and seamless user experience.}
+\resumeItemListEnd
+
+\resumeSubheading
+{Player Role Assignment Strategy}{2023}
+{Team Project – SJTU RoboCup Team}{}
+\resumeItemListStart
+\resumeItem{Implemented the Munkres (Hungarian) algorithm in Lua to optimize player role assignments during real-time gameplay.}
+\resumeItem{Implemented Ferrari’s method in C++ to compute expected time-to-target, used as weights in the Munkres cost matrix.}
+\resumeItemListEnd
+
+% \resumeSubheading
+% {Cross-Platform UI Application with JavaScript, Swing, and MySQL}{2023}
+% {Personal Project}{}
+% \resumeItemListStart
+% \resumeItem{Developed a desktop application with JavaScript and Swing for the user interface, ensuring responsive and intuitive UX.}
+% \resumeItem{Implemented MySQL database backend for persistent data storage and efficient data retrieval.}
+% \resumeItem{Designed and integrated seamless communication between frontend UI and backend database.}
+% \resumeItemListEnd
+%
+
+\resumeSubHeadingListEnd
+
+%-----------Experience-----------------
+\section{Experience}
+\resumeSubHeadingListStart
+\resumeSubheading
+{Software Team Leader – SJTU RoboCup Team}{Sep 2024 – Present}
+{Shanghai Jiao Tong University}{}
+\resumeItemListStart
+\resumeItem{Led a 20-member software team in developing and maintaining the RoboCup Small Size League (SSL) system.}
+\resumeItem{Reconstructed the CMake build system to simplify project structure and significantly improve compilation speed.}
+\resumeItem{Initiated cross-platform compatibility across Windows, Linux, and macOS to streamline team collaboration.}
+\resumeItem{Collaborated closely with the hardware team to optimize motion control and improve both offensive and defensive strategies.}
+\resumeItem{Oversaw integration of multi-language codebases (C++, Lua, Python) with a focus on modularity and real-time performance.}
+\resumeItem{Made key architectural decisions, including replacing \texttt{pybind11} with a custom UDP server for cross-language module integration.}
+\resumeItem{Served as the final debugger and code reviewer to resolve critical issues and ensure maintainable, high-quality code.}
+\resumeItem{Contributed to the team's 2nd Place finishes at the RoboCup China Tournament (2023, 2024).}
+\resumeItemListEnd
+
+\resumeSubheading
+{Core Member – SJTU Science and Technology Innovation Association (SSTIA)}{Oct 2023 – Present}
+{Shanghai Jiao Tong University}{}
+\resumeItemListStart
+\resumeItem{Co-organized a peer-led Deep Learning Workshop to promote student engagement in AI technologies.}
+\resumeItem{Participated in rule design and event planning for the LiMing Cup Mechanical Innovation Competition.}
+\resumeItemListEnd
+
+\resumeSubheading
+{Sponsorship Coordinator – Student Union, External Relations Department}{Oct 2023 – Present}
+{Shanghai Jiao Tong University}{}
+\resumeItemListStart
+\resumeItem{Designed over a dozen posters and social media campaigns for various university events and competitions.}
+\resumeItem{Helped establish the Integrated Media Center and authored event reports for notable student activities.}
+\resumeItemListEnd
+
+\resumeSubheading
+{Student Representative – 2024 China-Arab Youth Development Forum}{Nov 2024}
+{Shanghai International Studies University}{}
+\resumeItemListStart
+\resumeItem{Prepared and presented a simplified on-site demo with a scaled-down RoboCup setup under limited resources.}
+\resumeItem{Engaged in dialogue with Arab leaders, showcasing the technological achievements of Chinese university students.}
+\resumeItemListEnd
+
+
+
+\resumeSubHeadingListEnd
+
+%-----------Leadership-----------------
+\section{Leadership \& Awards}
+\resumeSubHeadingListStart
+\resumeItem{Software Team Leader – SJTU SRC RoboCup Team (2nd Place in RoboCup China 2023 and 2024)}
+\resumeItem{3rd Place – LiMing Cup Robot Challenge 2023}
+\resumeSubHeadingListEnd
+
+\end{document}
