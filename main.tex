@@ -72,15 +72,47 @@
 %-----------Skills-----------------
 \section{Skills}
 \begin{tabularx}{\textwidth}{l X}
-	Languages:  & C++, Python, C\#, CMake, Makefile, Lua, Protobuf, Java, Elm, MATLAB, SQL \\
-	Frameworks: & Qt, .NET Core, Unity, Messenger( Elm framework)                          \\
-	Tools:      & Git, Visual Studio, NeoVim, Mathematica, SolidWorks                      \\
+	Languages:  & C++, Python, Lua, CMake, Protobuf, SQL, MATLAB, C\#, Java, Elm \\
+	Frameworks: & Qt, Arduino, Unity, .NET Core                                  \\
+	Tools:      & Git, VS Code, NeoVim, Mathematica, SolidWorks                  \\
 \end{tabularx}
 
 %-----------Projects-----------------
 \section{Projects}
 \resumeSubHeadingListStart
 
+\resumeSubheading
+{Multi-Agent Role Assignment and Coordination}{Nov 2023}
+{Team Project – SJTU RoboCup Team}{}
+\resumeItemListStart
+\resumeItem{Designed and implemented real-time multi-agent role assignment using the Munkres (Hungarian) algorithm to optimize spatial task allocation during dynamic gameplay.}
+\resumeItem{Used Ferrari’s method in C++ to solve a quartic equation arising from time-to-target estimation, enabling real-time cost matrix construction for Munkres-based task assignment.}
+\resumeItem{Built modular interfaces with finite state machines to support flexible role switching under changing environmental constraints, contributing to adaptive team strategy.}
+\resumeItemListEnd
+
+
+
+\resumeSubheading
+{Obstacle Avoidance and Motion Planning System}{Dec 2023 – Mar 2024}
+{Team Project – SJTU RoboCup Team}{}
+\resumeItemListStart
+\resumeItem{Developed modular path planning systems based on D* and DWA algorithms for dynamic, partially known environments.}
+\resumeItem{Constructed simulation-based testing pipelines to evaluate performance under uncertainty and latency constraints.}
+\resumeItem{Integrated the planning module with low-level motion controllers and perception subsystems for real-time operation.}
+\resumeItem{Collaborated with hardware and control teams to ensure safe trajectory execution, bridging software and physical systems.}
+\resumeItemListEnd
+
+
+\resumeSubheading
+{Remote-Controlled Pickup Robot – LiMing Cup Mechanical Innovation Competition}{Mar 2024 – May 2024}
+{Team Project – SJTU Innovation Association}{}
+\resumeItemListStart
+\resumeItem{Designed and implemented a mechanical arm for a remote-controlled robot to pick up and place blocks efficiently in a competitive arena.}
+\resumeItem{Programmed multi-threaded control logic on Arduino to manage coordinated movement between arm joints, gripper, and drive system.}
+\resumeItem{Integrated sensor inputs (limit switches, encoders) to support responsive control and avoid mechanical interference.}
+\resumeItem{Collaborated with mechanical and electrical teammates on the design and tuning of actuators, transmission mechanisms, and control layout.}
+\resumeItem{Received the \textbf{Best Design Award} at the 14th LiMing Cup among over 50 teams, recognized for system reliability and mechanical innovation.}
+\resumeItemListEnd
 
 \resumeSubheading
 {UDP Server for Cross-Language Module Integration}{Sep, 2024}
@@ -95,15 +127,15 @@
 \resumeItemListEnd
 
 
-\resumeSubheading
-{Unity Game Design and Development}{Oct, 2024}
-{Personal Project}{}
-\resumeItemListStart
-\resumeItem{Designed and developed a 3D game in Unity, focusing on game mechanics, level design, and user interface implementation.}
-\resumeItem{Implemented game logic and features using C\#, including player controls and scoring systems.}
-\resumeItem{Gained familiarity with Mono/.NET framework for Unity to support cross-platform development.}
-\resumeItemListEnd
-
+% \resumeSubheading
+% {Unity Game Design and Development}{Oct, 2024}
+% {Personal Project}{}
+% \resumeItemListStart
+% \resumeItem{Designed and developed a 3D game in Unity, focusing on game mechanics, level design, and user interface implementation.}
+% \resumeItem{Implemented game logic and features using C\#, including player controls and scoring systems.}
+% \resumeItem{Gained familiarity with Mono/.NET framework for Unity to support cross-platform development.}
+% \resumeItemListEnd
+%
 % \resumeSubheading
 % {Precise Test Functions for Skills and Controls in SRC Robots}{2024}
 % {Team Project – SJTU RoboCup Team}{}
@@ -114,23 +146,16 @@
 % \resumeItemListEnd
 
 
-\resumeSubheading
-{2D Interactive Game Development with Elm}{May, 2024}
-{Team Project – SJTU}{}
-\resumeItemListStart
-\resumeItem{Implemented a custom physics engine for the game, including collision detection, gravity, friction, momentum, and energy conservation.}
-\resumeItem{Optimized the original \textit{Messenger} structure, improving collision detection performance for brick-like objects by a factor of $10^{3}$.}
-\resumeItem{Managed complex UI interactions and game state using Elm’s The Elm Architecture (TEA), ensuring smooth gameplay and responsiveness.}
-\resumeItem{Enhanced browser performance to achieve low latency and seamless user experience.}
-\resumeItemListEnd
+% \resumeSubheading
+% {2D Interactive Game Development with Elm}{May, 2024}
+% {Team Project – SJTU}{}
+% \resumeItemListStart
+% \resumeItem{Implemented a custom physics engine for the game, including collision detection, gravity, friction, momentum, and energy conservation.}
+% \resumeItem{Optimized the original \textit{Messenger} structure, improving collision detection performance for brick-like objects by a factor of $10^{3}$.}
+% \resumeItem{Managed complex UI interactions and game state using Elm’s The Elm Architecture (TEA), ensuring smooth gameplay and responsiveness.}
+% \resumeItem{Enhanced browser performance to achieve low latency and seamless user experience.}
+% \resumeItemListEnd
 
-\resumeSubheading
-{Player Role Assignment Strategy}{Nov, 2023}
-{Team Project – SJTU RoboCup Team}{}
-\resumeItemListStart
-\resumeItem{Implemented the Munkres (Hungarian) algorithm in Lua to optimize player role assignments during real-time gameplay.}
-\resumeItem{Implemented Ferrari’s method in C++ to compute expected time-to-target, used as weights in the Munkres cost matrix.}
-\resumeItemListEnd
 
 % \resumeSubheading
 % {Cross-Platform UI Application with JavaScript, Swing, and MySQL}{2023}
@@ -165,8 +190,9 @@
 {Core Member – SJTU Science and Technology Innovation Association (SSTIA)}{Oct 2023 – Present}
 {Shanghai Jiao Tong University}{}
 \resumeItemListStart
-\resumeItem{Co-organized a peer-led Deep Learning Workshop to promote student engagement in AI technologies.}
-\resumeItem{Participated in rule design and event planning for the LiMing Cup Mechanical Innovation Competition.}
+\resumeItem{Designed and hosted an internal workshop on Deep Learning for Robotics, introducing key concepts such as CNNs, object detection, and model deployment.}
+\resumeItem{Mentored students in hands-on experimentation with PyTorch and simple generative models, strengthening team capabilities in AI integration.}
+\resumeItem{Collaborated on interdisciplinary discussions linking perception modules with control systems.}
 \resumeItemListEnd
 
 \resumeSubheading
