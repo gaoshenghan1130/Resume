@@ -52,8 +52,8 @@
 
 %----------Header-----------------
 \begin{center}
-	{\Huge \scshape Shenghan Gao} \\ \vspace{1pt}
-	Ann Arbor, MI • \href{mailto:shenghan@umich.edu}{shenghan@umich.edu} • +86 15800522128 (China)\\
+	{\Huge \scshape Gao Shenghan} \\ \vspace{1pt}
+	Ann Arbor, MI • \href{mailto:shenghan@umich.edu}{shenghan@umich.edu} • +1 (734) 358-6704\\
 	\href{https://github.com/gaoshenghan1130}{https://github.com/gaoshenghan1130} \\
 	\small{Eligible to work in the US under CPT authorization}
 \end{center}
@@ -66,44 +66,63 @@
 \makebox[\textwidth][r]{\textit{Ann Arbor, MI / Shanghai, China}} \\
 \textit{Bachelor of Science in Engineering} \\
 \textit{Dual Degree: Mechanical Engineering and Electrical \& Computer Engineering} \hfill \textit{Expected May 2027} \\
-\small{CPT-eligible international student (F-1) studying in the U.S. from Sep 2025 to May 2027}
 \resumeSubHeadingListEnd
 
 %-----------Skills-----------------
 \section{Skills}
 \begin{tabularx}{\textwidth}{l X}
-	Languages:  & C++, Python, C\#, CMake, Makefile, Lua, Protobuf, Java, Elm, MATLAB, SQL \\
-	Frameworks: & Qt, .NET Core, Unity, Messenger( Elm framework)                          \\
-	Tools:      & Git, Visual Studio, NeoVim, Mathematica, SolidWorks                      \\
+	Languages  & C++, Python, C\#, Java, CMake, Makefile                                        \\
+	Frameworks & Qt, Unity                                                                      \\
+	Tools      & Git, Visual Studio, NeoVim, MATLAB, Mathematica, SolidWorks, Arduino, STM32IDE
 \end{tabularx}
 
 %-----------Projects-----------------
 \section{Projects}
 \resumeSubHeadingListStart
 
-
 \resumeSubheading
-{UDP Server for Cross-Language Module Integration}{Sep, 2024}
-{Team Project – SJTU RoboCup Team}{}
+{Software Projects – SJTU RoboCup Team}{2023 – Present}
+{Team Project}{}
 \resumeItemListStart
-\resumeItem{Developed an independent UDP server in Python to enable external Python modules (e.g., PyTorch) to communicate with a legacy C++/Lua-based system.}
-\resumeItem{Designed and implemented a communication protocol using Protocol Buffers (protobuf), with supporting scripts in C++ and Python; features include one-sided disconnection handling, automatic reconnection, and multi-type data transmission.}
-\resumeItem{Asynchronously handled multiple client connections using Python’s \texttt{asyncio} and Qt’s signals and slots, enabling efficient data exchange between the server and multiple clients.}
-\resumeItem{Wrapped the Qt \texttt{QProcess} class to store static return values, allowing update functions to directly access returned data.}
-\resumeItem{Utilized Python’s \texttt{multiprocessing} to assign independent processes for computation tasks, achieving multicore utilization; implemented file pipes for parameter updates and shared memory for data exchange.}
-\resumeItem{Built a simple UI to monitor the status of active tasks.}
+\resumeItem{Designed cross-language server with protobuf, C++/Python, UDP, asyncio, and Qt integration.}
+\resumeItem{Rebuilt modular CMake system with cross-platform support and faster compilation (about 50\%).}
+\resumeItem{Developed precise test functions for SSL robots, including motion control and D* Lite path planning.}
+\resumeItem{Implemented player role assignment with Munkres algorithm (Lua/Python) and Ferrari’s method (C++).}
+\resumeItem{Reconstructed high-level state machines from Lua to Python, improving modularity and performance.}
 \resumeItemListEnd
 
+\small{More projects on \href{https://www.github.com/gaoshenghan1130}{GitHub}, \href{https://focs.ji.sjtu.edu.cn/silverfocs/project/2024/}{SilverFOCS}, and SJTU GameJam club.}
 
 \resumeSubheading
-{Unity Game Design and Development}{Oct, 2024}
-{Personal Project}{}
+{Hardware Projects Summary}{2023 – Present}
+{Personal and Group Projects}{}
 \resumeItemListStart
-\resumeItem{Designed and developed a 3D game in Unity, focusing on game mechanics, level design, and user interface implementation.}
-\resumeItem{Implemented game logic and features using C\#, including player controls and scoring systems.}
-\resumeItem{Gained familiarity with Mono/.NET framework for Unity to support cross-platform development.}
+\resumeItem{Autonomous unicycle with IMU-based balance control and STM32 real-time tuning (Ongoing).}
+\resumeItem{3-wheel robot with levered grabber arm and Arduino, controlled via PS2 controller.}
 \resumeItemListEnd
 
+% \resumeSubheading
+% {UDP Server for Cross-Language Module Integration}{Sep, 2024}
+% {Team Project – SJTU RoboCup Team}{}
+% \resumeItemListStart
+% \resumeItem{Developed an independent UDP server in Python to enable external Python modules (e.g., PyTorch) to communicate with a legacy C++/Lua-based system.}
+% \resumeItem{Designed and implemented a communication protocol using Protocol Buffers (protobuf), with supporting scripts in C++ and Python; features include one-sided disconnection handling, automatic reconnection, and multi-type data transmission.}
+% \resumeItem{Asynchronously handled multiple client connections using Python’s \texttt{asyncio} and Qt’s signals and slots, enabling efficient data exchange between the server and multiple clients.}
+% \resumeItem{Wrapped the Qt \texttt{QProcess} class to store static return values, allowing update functions to directly access returned data.}
+% \resumeItem{Utilized Python’s \texttt{multiprocessing} to assign independent processes for computation tasks, achieving multicore utilization; implemented file pipes for parameter updates and shared memory for data exchange.}
+% \resumeItem{Built a simple UI to monitor the status of active tasks.}
+% \resumeItemListEnd
+%
+%
+% \resumeSubheading
+% {Unity Game Design and Development}{Oct, 2024}
+% {Personal Project}{}
+% \resumeItemListStart
+% \resumeItem{Designed and developed a 3D game in Unity, focusing on game mechanics, level design, and user interface implementation.}
+% \resumeItem{Implemented game logic and features using C\#, including player controls and scoring systems.}
+% \resumeItem{Gained familiarity with Mono/.NET framework for Unity to support cross-platform development.}
+% \resumeItemListEnd
+%
 % \resumeSubheading
 % {Precise Test Functions for Skills and Controls in SRC Robots}{2024}
 % {Team Project – SJTU RoboCup Team}{}
@@ -114,24 +133,24 @@
 % \resumeItemListEnd
 
 
-\resumeSubheading
-{2D Interactive Game Development with Elm}{May, 2024}
-{Team Project – SJTU}{}
-\resumeItemListStart
-\resumeItem{Implemented a custom physics engine for the game, including collision detection, gravity, friction, momentum, and energy conservation.}
-\resumeItem{Optimized the original \textit{Messenger} structure, improving collision detection performance for brick-like objects by a factor of $10^{3}$.}
-\resumeItem{Managed complex UI interactions and game state using Elm’s The Elm Architecture (TEA), ensuring smooth gameplay and responsiveness.}
-\resumeItem{Enhanced browser performance to achieve low latency and seamless user experience.}
-\resumeItemListEnd
-
-\resumeSubheading
-{Player Role Assignment Strategy}{Nov, 2023}
-{Team Project – SJTU RoboCup Team}{}
-\resumeItemListStart
-\resumeItem{Implemented the Munkres (Hungarian) algorithm in Lua to optimize player role assignments during real-time gameplay.}
-\resumeItem{Implemented Ferrari’s method in C++ to compute expected time-to-target, used as weights in the Munkres cost matrix.}
-\resumeItemListEnd
-
+% \resumeSubheading
+% {2D Interactive Game Development with Elm}{May, 2024}
+% {Team Project – SJTU}{}
+% \resumeItemListStart
+% \resumeItem{Implemented a custom physics engine for the game, including collision detection, gravity, friction, momentum, and energy conservation.}
+% \resumeItem{Optimized the original \textit{Messenger} structure, improving collision detection performance for brick-like objects by a factor of $10^{3}$.}
+% \resumeItem{Managed complex UI interactions and game state using Elm’s The Elm Architecture (TEA), ensuring smooth gameplay and responsiveness.}
+% \resumeItem{Enhanced browser performance to achieve low latency and seamless user experience.}
+% \resumeItemListEnd
+%
+% \resumeSubheading
+% {Player Role Assignment Strategy}{Nov, 2023}
+% {Team Project – SJTU RoboCup Team}{}
+% \resumeItemListStart
+% \resumeItem{Implemented the Munkres (Hungarian) algorithm in Lua to optimize player role assignments during real-time gameplay.}
+% \resumeItem{Implemented Ferrari’s method in C++ to compute expected time-to-target, used as weights in the Munkres cost matrix.}
+% \resumeItemListEnd
+%
 % \resumeSubheading
 % {Cross-Platform UI Application with JavaScript, Swing, and MySQL}{2023}
 % {Personal Project}{}
