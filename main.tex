@@ -82,136 +82,39 @@
 \resumeSubHeadingListStart
 
 \resumeSubheading
-{Software Projects – SJTU RoboCup Team}{2023 – Present}
-{Team Project}{}
+{Autonomous Unicycle with Real-Time Balance Control}{2024 – Ongoing}
+{Research Project}{}
 \resumeItemListStart
-\resumeItem{Designed cross-language server with protobuf, C++/Python, UDP, asyncio, and Qt integration.}
-\resumeItem{Rebuilt modular CMake system with cross-platform support and faster compilation (about 50\%).}
-\resumeItem{Developed precise test functions for SSL robots, including motion control and D* Lite path planning.}
-\resumeItem{Implemented player role assignment with Munkres algorithm (Lua/Python) and Ferrari’s method (C++).}
-\resumeItem{Reconstructed high-level state machines from Lua to Python, improving modularity and performance.}
-\resumeItemListEnd
-
-\small{More projects on \href{https://www.github.com/gaoshenghan1130}{GitHub}, \href{https://focs.ji.sjtu.edu.cn/silverfocs/project/2024/}{SilverFOCS}, and SJTU GameJam club.}
-
-\resumeSubheading
-{Hardware Projects Summary}{2023 – Present}
-{Personal and Group Projects}{}
-\resumeItemListStart
-\resumeItem{Autonomous unicycle with IMU-based balance control and STM32 real-time tuning (Ongoing).}
-\resumeItem{3-wheel robot with levered grabber arm and Arduino, controlled via PS2 controller.}
-\resumeItemListEnd
-
-% \resumeSubheading
-% {UDP Server for Cross-Language Module Integration}{Sep, 2024}
-% {Team Project – SJTU RoboCup Team}{}
-% \resumeItemListStart
-% \resumeItem{Developed an independent UDP server in Python to enable external Python modules (e.g., PyTorch) to communicate with a legacy C++/Lua-based system.}
-% \resumeItem{Designed and implemented a communication protocol using Protocol Buffers (protobuf), with supporting scripts in C++ and Python; features include one-sided disconnection handling, automatic reconnection, and multi-type data transmission.}
-% \resumeItem{Asynchronously handled multiple client connections using Python’s \texttt{asyncio} and Qt’s signals and slots, enabling efficient data exchange between the server and multiple clients.}
-% \resumeItem{Wrapped the Qt \texttt{QProcess} class to store static return values, allowing update functions to directly access returned data.}
-% \resumeItem{Utilized Python’s \texttt{multiprocessing} to assign independent processes for computation tasks, achieving multicore utilization; implemented file pipes for parameter updates and shared memory for data exchange.}
-% \resumeItem{Built a simple UI to monitor the status of active tasks.}
-% \resumeItemListEnd
-%
-%
-% \resumeSubheading
-% {Unity Game Design and Development}{Oct, 2024}
-% {Personal Project}{}
-% \resumeItemListStart
-% \resumeItem{Designed and developed a 3D game in Unity, focusing on game mechanics, level design, and user interface implementation.}
-% \resumeItem{Implemented game logic and features using C\#, including player controls and scoring systems.}
-% \resumeItem{Gained familiarity with Mono/.NET framework for Unity to support cross-platform development.}
-% \resumeItemListEnd
-%
-% \resumeSubheading
-% {Precise Test Functions for Skills and Controls in SRC Robots}{2024}
-% {Team Project – SJTU RoboCup Team}{}
-% \resumeItemListStart
-% \resumeItem{Rewrote the singleton system to support CRTP (Curiously Recurring Template Pattern) for enhanced type safety and compile-time validation.}
-% \resumeItem{Implemented a scoring system by wrapping the existing debug engine to display structured scoreboards, replacing scattered print statements.}
-% \resumeItem{Developed a suite of motion control test functions (as templates), specifically targeting D* Lite path planning algorithms.}
-% \resumeItemListEnd
-
-
-% \resumeSubheading
-% {2D Interactive Game Development with Elm}{May, 2024}
-% {Team Project – SJTU}{}
-% \resumeItemListStart
-% \resumeItem{Implemented a custom physics engine for the game, including collision detection, gravity, friction, momentum, and energy conservation.}
-% \resumeItem{Optimized the original \textit{Messenger} structure, improving collision detection performance for brick-like objects by a factor of $10^{3}$.}
-% \resumeItem{Managed complex UI interactions and game state using Elm’s The Elm Architecture (TEA), ensuring smooth gameplay and responsiveness.}
-% \resumeItem{Enhanced browser performance to achieve low latency and seamless user experience.}
-% \resumeItemListEnd
-%
-% \resumeSubheading
-% {Player Role Assignment Strategy}{Nov, 2023}
-% {Team Project – SJTU RoboCup Team}{}
-% \resumeItemListStart
-% \resumeItem{Implemented the Munkres (Hungarian) algorithm in Lua to optimize player role assignments during real-time gameplay.}
-% \resumeItem{Implemented Ferrari’s method in C++ to compute expected time-to-target, used as weights in the Munkres cost matrix.}
-% \resumeItemListEnd
-%
-% \resumeSubheading
-% {Cross-Platform UI Application with JavaScript, Swing, and MySQL}{2023}
-% {Personal Project}{}
-% \resumeItemListStart
-% \resumeItem{Developed a desktop application with JavaScript and Swing for the user interface, ensuring responsive and intuitive UX.}
-% \resumeItem{Implemented MySQL database backend for persistent data storage and efficient data retrieval.}
-% \resumeItem{Designed and integrated seamless communication between frontend UI and backend database.}
-% \resumeItemListEnd
-%
-
-\resumeSubHeadingListEnd
-
-%-----------Experience-----------------
-\section{Experience}
-\resumeSubHeadingListStart
-\resumeSubheading
-{Software Team Leader – SJTU RoboCup Team}{Sep 2024 – Present}
-{Shanghai Jiao Tong University}{}
-\resumeItemListStart
-\resumeItem{Led a 20-member software team in developing and maintaining the RoboCup Small Size League (SSL) system.}
-\resumeItem{Reconstructed the CMake build system to simplify project structure and significantly improve compilation speed.}
-\resumeItem{Initiated cross-platform compatibility across Windows, Linux, and macOS to streamline team collaboration.}
-\resumeItem{Collaborated closely with the hardware team to optimize motion control and improve both offensive and defensive strategies.}
-\resumeItem{Oversaw integration of multi-language codebases (C++, Lua, Python) with a focus on modularity and real-time performance.}
-\resumeItem{Made key architectural decisions, including replacing \texttt{pybind11} with a custom UDP server for cross-language module integration.}
-\resumeItem{Served as the final debugger and code reviewer to resolve critical issues and ensure maintainable, high-quality code.}
-\resumeItem{Contributed to the team's 2nd Place finishes at the RoboCup China Tournament (2023, 2024).}
+\resumeItem{Investigating self-balancing vehicle dynamics using an STM32-based embedded system with IMU sensor fusion.}
+\resumeItem{Optimizing STM32CubeIDE building tools, fixed missing including in bluetooth sample, enable both CMAKE and IDE-based workflows.}
+\resumeItem{Utilized oscilloscopes, serial monitors(for UART), and modular firmware design for real-time tuning and debugging.}
+\resumeItem{Aiming to develop fully autonomous unicycle with balance control and path planning capabilities.}
 \resumeItemListEnd
 
 \resumeSubheading
-{Core Member – SJTU Science and Technology Innovation Association (SSTIA)}{Oct 2023 – Present}
-{Shanghai Jiao Tong University}{}
+{Three-Wheel Robot with Grabber Arm}{2023}
+{SJTU / Competitions}{}
 \resumeItemListStart
-\resumeItem{Co-organized a peer-led Deep Learning Workshop to promote student engagement in AI technologies.}
-\resumeItem{Participated in rule design and event planning for the LiMing Cup Mechanical Innovation Competition.}
+\resumeItem{Designed and assembled a mobile robot with bluetooth control.}
+\resumeItem{Integrated Arduino-based motor drivers and sensors, controlled via PS2 joystick.}
+\resumeItem{Designed a levered grabber arm, increasing the lifting torque of the arm, winning the best design award.}
 \resumeItemListEnd
 
 \resumeSubheading
-{Sponsorship Coordinator – Student Union, External Relations Department}{Oct 2023 – Present}
-{Shanghai Jiao Tong University}{}
+{RoboCup Small Size League – Hardware Collaboration}{2023 – Present}
+{SJTU RoboCup Team}{}
 \resumeItemListStart
-\resumeItem{Designed over a dozen posters and social media campaigns for various university events and competitions.}
-\resumeItem{Helped establish the Integrated Media Center and authored event reports for notable student activities.}
+\resumeItem{Collaborated with hardware team to monitor optimize trajectory tracking for chipping.}
+\resumeItem{Implemented collision }
+\resumeItem{Supported integration of embedded systems with high-level AI strategies.}
+\resumeItem{Contributed to the team’s 2nd Place finishes in China RoboCup (2023, 2024).}
 \resumeItemListEnd
-
-\resumeSubheading
-{Student Representative – 2024 China-Arab Youth Development Forum}{Nov 2024}
-{Shanghai International Studies University}{}
-\resumeItemListStart
-\resumeItem{Prepared and presented a simplified on-site demo with a scaled-down RoboCup setup under limited resources.}
-\resumeItem{Engaged in dialogue with Arab leaders, showcasing the technological achievements of Chinese university students.}
-\resumeItemListEnd
-
-
 
 \resumeSubHeadingListEnd
 
 \section{Awards \& Honors}
 \resumeSubHeadingListStart
-\resumeItem{2nd Place – China Robot Competition and RoboCup World Cup China Tournament (2023, 2024)}
+\resumeItem{2nd Place – RoboCup China Tournament (2023, 2024)}
 \resumeItem{Best Design Award – 14th Li Ming Cup Mechanical Innovation Competition (2024)}
 \resumeItem{Most Popular Award – SJTU GameJam Game Development Competition (2024)}
 \resumeItem{Silver Medal – University Physics Competition (2023)}
